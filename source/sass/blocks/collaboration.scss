@@ -1,0 +1,20 @@
+.collaboration {
+  font-weight: 400;
+  font-family: $font-main;
+  color: $dark-grey;
+  background-color: $white;
+}
+
+.collaboration__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $font-extra;
+  color: $black-2;
+  text-transform: uppercase;
+}
+
+.collaboration__address {
+  font-size: 14px;
+  line-height: 20px;
+}

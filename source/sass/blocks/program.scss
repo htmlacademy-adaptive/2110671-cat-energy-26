@@ -1,0 +1,24 @@
+.program {
+  font-family: $font-extra;
+  color: $black-1;
+}
+
+.program__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.program__text {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $font-main;
+  color: $dark-grey;
+}
+
+.program__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $black-1;
+}
