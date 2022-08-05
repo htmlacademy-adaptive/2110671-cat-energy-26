@@ -9,4 +9,9 @@
   text-transform: uppercase;
   color: $white;
   background-color: $green;
+
+  &--gray {
+    background-color : $light-grey;
+    color: $dark-grey;
+  }
 }

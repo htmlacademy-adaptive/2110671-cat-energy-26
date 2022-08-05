@@ -1,0 +1,25 @@
+.catalog {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: $font-main;
+  color: $dark-grey;
+  text-align: center;
+  list-style: none;
+}
+
+.catalog-item__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $black-3;
+}
+
+.catalog-item__title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: $font-extra;
+}
+
