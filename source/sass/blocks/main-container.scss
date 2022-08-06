@@ -7,7 +7,7 @@
 }
 
 .main-container__main-catalog {
- margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .main-container__title {
@@ -16,4 +16,12 @@
   font-weight: 400;
   font-family: $font-extra;
   color: $black-1;
+}
+
+.main-container__text {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $font-extra;
+  color: $black-1;
+  text-transform: uppercase;
 }
