@@ -1,10 +1,14 @@
 .form__label {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 18px;
   color: $dark-grey;
 
   &--radio {
     color: $black-3;
+  }
+
+  &--checkbox {
+    color: $black-1;
   }
 }
 
@@ -17,22 +21,23 @@
 }
 
 .form__input-field {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 18px;
   font-family: $font-extra;
   color: $dark-grey;
   text-transform: uppercase;
 }
 
 .form__legend {
-  font-size: 36px;
-  line-height: 36px;
+  font-size: 24px;
+  line-height: 26px;
   font-weight: 400;
+  text-transform: initial;
 }
 
 .form__textarea {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 18px;
   font-weight: 400;
   font-family: $font-extra;
   text-transform: uppercase;
@@ -41,7 +46,7 @@
 }
 
 .form__text {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 16px;
   font-weight: 400;
   font-family: $font-main;
