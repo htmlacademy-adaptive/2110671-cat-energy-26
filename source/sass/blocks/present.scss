@@ -1,0 +1,12 @@
+.present {
+  min-height: 289px;
+  background-color: $green;
+  background-image: url("../img/gift-photo-mobile.jpg");
+  background-repeat: no-repeat;
+}
+
+.present__text {
+  line-height: 20px;
+  text-align: center;
+  color: $white;
+}

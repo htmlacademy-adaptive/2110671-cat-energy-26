@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
@@ -19,13 +20,13 @@
         </div>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a href="#">Главная</a>
+            <a class="site-list__link" href="#">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">Каталог продукции</a>
+            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">Подбор программы</a>
+            <a class="site-list__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -43,7 +44,7 @@
 
     <main class="main-container">
 
-      <section class="program-list">
+      <section class="program-list main-container__program-list">
         <div class="container">
           <h2 class="visually-hidden">Список программ</h2>
 
@@ -64,7 +65,7 @@
         </div>
       </section>
 
-      <section class="description">
+      <section class="description main-container__description">
         <div class="container">
           <h2 class="description__title">Как это работает</h2>
           <ol class="description__list">
@@ -84,7 +85,7 @@
         </div>
       </section>
 
-      <section class="result">
+      <section class="result main-container__result">
         <div class="container">
           <div class="result__description-block">
             <h2 class="result__title">Живой пример</h2>
@@ -134,10 +135,10 @@
 
     <footer class="main-footer">
 
-      <section class="collaboration">
+      <section class="collaboration main-footer__collaboration">
         <div class="container">
           <div class="collaboration__contacts">
-            <h2 class="collaboration__title">Приглашаем ксотрудничеству дилеров!</h2>
+            <h2 class="collaboration__title">Приглашаем к сотрудничеству дилеров!</h2>
             <div class="collaboration__address">
               <p class="collaboration__street">ул. Большая Конюшенная, д. 19/8</p>
               <p class="collaboration__city">Санкт-Петербург</p>

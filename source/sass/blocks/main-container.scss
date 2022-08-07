@@ -1,0 +1,27 @@
+.main-container__program-list {
+  margin-bottom: 20px;
+}
+
+.main-container__description {
+  margin-bottom: 74px;
+}
+
+.main-container__main-catalog {
+  margin-bottom: 50px;
+}
+
+.main-container__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  font-family: $font-extra;
+  color: $black-1;
+}
+
+.main-container__text {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $font-extra;
+  color: $black-1;
+  text-transform: uppercase;
+}
