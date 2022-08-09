@@ -8,21 +8,64 @@
   background-image: url("../img/promo-cat.jpg");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width:$tablet-width) {
+    min-height: 830px;
+    color: $black-1;
+    background-color: $white;
+    background-image: none;
+  }
+
+  @media (min-width:$desktop-width) {
+    min-height: 500px;
+    color: $black-1;
+    background-color: $white;
+    background-image: none;
+  }
 }
 
 .promo__title {
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+
+  @media (min-width:$tablet-width) {
+    max-width: 80%;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
+
+  @media (min-width:$desktop-width) {
+    max-width: 42%;
+    }
 }
 
 .promo__slogan {
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+
+  @media (min-width:$tablet-width) {
+    max-width: 80%;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    }
+
+  @media (min-width:$desktop-width) {
+    max-width: 40%;
+    }
 }
 
 .promo__button {
   font-size: 14px;
   line-height: 18px;
+
+  @media (min-width:$tablet-width) {
+    padding: 14px 0;
+    width: 244px;
+    font-size: 20px;
+    line-height: 20px;
+    }
 }
