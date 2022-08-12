@@ -9,7 +9,7 @@
   line-height: 37px;
   text-transform: uppercase;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
   }
@@ -21,7 +21,7 @@
   font-family: $font-main;
   color: $dark-grey;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
   }
@@ -32,7 +32,7 @@
   text-transform: uppercase;
   color: $black-1;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
   }
