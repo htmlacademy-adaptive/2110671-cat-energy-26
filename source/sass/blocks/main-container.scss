@@ -16,6 +16,11 @@
   font-weight: 400;
   font-family: $font-extra;
   color: $black-1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .main-container__text {

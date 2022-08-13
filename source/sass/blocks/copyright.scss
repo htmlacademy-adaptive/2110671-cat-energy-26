@@ -3,3 +3,9 @@
   color: $dark-grey;
   text-decoration: none;
 }
+
+.copyright__link {
+  @media (min-width: $tablet-width) {
+    margin-left: 22px;
+  }
+}

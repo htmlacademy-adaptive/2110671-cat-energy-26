@@ -3,6 +3,10 @@
   font-family: $font-main;
   color: $dark-grey;
   background-color: $white;
+
+  &--catalog {
+    background-color: $light-grey;
+  }
 }
 
 .collaboration__contacts {

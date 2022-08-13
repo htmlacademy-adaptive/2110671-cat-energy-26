@@ -3,6 +3,40 @@
   line-height: 16px;
   font-weight: 400;
   font-family: $font-extra;
-  color: $black-1;
+  color: $black-3;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.extra-product__options {
+  margin: 0 0 15px;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    margin: 0;
+  }
+}
+
+.extra-product__options-amount {
+  width: auto;
+}
+
+.extra-product__options-cost {
+  text-align: right;
+  width: 46px;
 }
