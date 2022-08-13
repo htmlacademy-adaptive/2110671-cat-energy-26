@@ -5,3 +5,22 @@
 .main-footer__collaboration {
   margin-bottom: 39px;
 }
+
+.main-footer__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.main-footer__logo {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.main-footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

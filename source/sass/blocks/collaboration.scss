@@ -5,6 +5,15 @@
   background-color: $white;
 }
 
+.collaboration__contacts {
+  display: flex;
+  padding: 20px 0;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
+}
+
 .collaboration__title {
   font-weight: 400;
   font-size: 16px;
@@ -12,9 +21,22 @@
   font-family: $font-extra;
   color: $black-2;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 25px;
+    width: 30%;
+  }
 }
 
 .collaboration__address {
   font-size: 14px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    width: 25%;
+  }
 }

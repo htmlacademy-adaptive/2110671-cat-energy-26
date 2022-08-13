@@ -1,0 +1,7 @@
+.main-header {
+  padding-top: 11px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 25px;
+  }
+}
