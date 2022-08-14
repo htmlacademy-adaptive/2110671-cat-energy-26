@@ -29,4 +29,13 @@
   font-family: $font-extra;
   color: $black-1;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 40px;
+    margin-top: 56px;
+    margin-bottom: 66px;
+    max-width: 420px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
