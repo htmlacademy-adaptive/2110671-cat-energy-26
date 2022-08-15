@@ -13,8 +13,8 @@
       content: "";
       position: absolute;
       top: 0;
-      left: -30vw;
-      right: -30vw;
+      left: 0;
+      right: 0;
       height: 1px;
       background-color: $light-grey-4;
     }
@@ -23,8 +23,8 @@
       content: "";
       position: absolute;
       bottom: 0;
-      left: -30vw;
-      right: -30vw;
+      left: 0;
+      right: 0;
       height: 1px;
       background-color: $light-grey-4;
     }
@@ -96,4 +96,8 @@
 
 .catalog-item__button {
   width: 100%;
+
+  @media (max-width: $mobile-only) {
+    max-width: 280px;
+  }
 }
