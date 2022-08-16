@@ -8,13 +8,12 @@
 
 .main-container__main-catalog {
   margin-bottom: 50px;
-  
+
   @media (max-width: $mobile-only) {
     .container {
       display: contents;
     }
   }
-
 }
 
 .main-container__title {
