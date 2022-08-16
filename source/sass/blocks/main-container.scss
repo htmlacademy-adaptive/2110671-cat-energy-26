@@ -8,6 +8,12 @@
 
 .main-container__main-catalog {
   margin-bottom: 50px;
+
+  @media (max-width: $mobile-only) {
+    .container {
+      display: contents;
+    }
+  }
 }
 
 .main-container__title {
@@ -16,6 +22,11 @@
   font-weight: 400;
   font-family: $font-extra;
   color: $black-1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .main-container__text {
@@ -24,4 +35,13 @@
   font-family: $font-extra;
   color: $black-1;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 40px;
+    margin-top: 56px;
+    margin-bottom: 66px;
+    max-width: 420px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
