@@ -277,6 +277,11 @@ body {
 .main-container__main-catalog {
   margin-bottom: 50px;
 }
+@media (max-width: 767px) {
+  .main-container__main-catalog .container {
+    display: contents;
+  }
+}
 
 .main-container__title {
   font-size: 36px;
@@ -787,8 +792,8 @@ body {
     content: "";
     position: absolute;
     top: 0;
-    left: -30vw;
-    right: -30vw;
+    left: 0;
+    right: 0;
     height: 1px;
     background-color: #ebebeb;
   }
@@ -796,8 +801,8 @@ body {
     content: "";
     position: absolute;
     bottom: 0;
-    left: -30vw;
-    right: -30vw;
+    left: 0;
+    right: 0;
     height: 1px;
     background-color: #ebebeb;
   }
@@ -873,6 +878,11 @@ body {
 .catalog-item__button {
   width: 100%;
 }
+@media (max-width: 767px) {
+  .catalog-item__button {
+    max-width: 280px;
+  }
+}
 
 .show-all {
   position: relative;
@@ -905,6 +915,11 @@ body {
 
 .show-all__button {
   width: 100%;
+}
+@media (max-width: 767px) {
+  .show-all__button {
+    max-width: 280px;
+  }
 }
 
 .show-all__text {
@@ -1123,11 +1138,34 @@ body {
   margin-bottom: 58px;
 }
 
+.form__container {
+  max-width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .form__container {
+    max-width: 768px;
+    padding: 0 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .form__container {
+    padding: 0;
+  }
+}
+@media (min-width: 1440px) {
+  .form__container--desktop-only {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+}
+
 @media (min-width: 1440px) {
   .form__wrapper-information-cat {
     display: flex;
     justify-content: space-between;
-    width: 100%;
   }
 }
 
@@ -1146,8 +1184,8 @@ body {
     content: "";
     position: absolute;
     top: 0;
-    left: -30vw;
-    right: -30vw;
+    left: 0;
+    right: 0;
     height: 1px;
     background-color: #d9d9d9;
   }
@@ -1155,8 +1193,8 @@ body {
     content: "";
     position: absolute;
     bottom: 0;
-    left: -30vw;
-    right: -30vw;
+    left: 0;
+    right: 0;
     height: 1px;
     background-color: #d9d9d9;
   }
@@ -1166,10 +1204,10 @@ body {
     margin-bottom: 40px;
   }
   .form__fieldset--program {
-    margin-bottom: 71px;
+    max-width: 708px;
+    margin: 0 auto 71px;
     padding-top: 25px;
     padding-bottom: 10px;
-    padding-left: 20px;
     border: 1px solid #e7e7e7;
   }
 }
