@@ -1,4 +1,8 @@
 .main-nav {
+  @media (max-width: $mobile-only) {
+    border-bottom: 1px solid $light-grey-6;
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -13,6 +17,10 @@
     padding-left: 40px;
     padding-right: 40px;
   }
+}
+
+.main-nav__logo img {
+  padding-bottom: 17px;
 }
 
 .main-nav__wrapper {

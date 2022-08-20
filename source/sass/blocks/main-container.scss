@@ -17,6 +17,8 @@
 }
 
 .main-container__title {
+  margin-top: 27px;
+  margin-bottom: 37px;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
@@ -30,6 +32,8 @@
 }
 
 .main-container__text {
+  margin-bottom: 39px;
+  max-width: 260px;
   font-size: 14px;
   line-height: 18px;
   font-family: $font-extra;
