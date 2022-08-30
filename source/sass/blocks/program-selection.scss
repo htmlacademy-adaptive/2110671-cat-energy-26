@@ -4,4 +4,8 @@
   color: $black-1;
   text-transform: uppercase;
   margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+  }
 }

@@ -12,6 +12,11 @@
   &--form {
     background-color: $light-grey;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 39px;
+    padding-top: 30px;
+  }
 }
 
 .collaboration__contacts {
@@ -20,11 +25,11 @@
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
+    padding-top: 15px;
   }
 }
 
 .collaboration__title {
-  margin: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -33,6 +38,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
     font-size: 20px;
     line-height: 25px;
     width: 30%;
@@ -52,11 +58,16 @@
 }
 
 .collaboration__street {
-  margin: 0;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 13px;
+    margin-bottom: 19px;
+  }
 }
 
 .collaboration__city {
-  margin: 0;
+  margin-top: 0;
 }
 
 .collaboration__map {
@@ -75,6 +86,17 @@
     background-image: url("../img/map-pin.png");
     background-size: 100%;
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 141px;
+      left: calc(50% - 51px);
+      width: 113px;
+      height: 105px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
   }
 }
 

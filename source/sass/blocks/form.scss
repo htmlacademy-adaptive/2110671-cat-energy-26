@@ -5,7 +5,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: $tablet-width;
-    padding: 0 30px;
+    padding: 0 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,10 +21,14 @@
       padding: 0 40px;
     }
   }
+
+  &--program {
+    padding: 0 30px;
+  }
 }
 
 .form__wrapper-information-cat {
-  margin-bottom: 26px;
+  margin-bottom: 75px;
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -42,7 +46,7 @@
     margin-bottom: 12px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 55px;
+      margin-bottom: 50px;
     }
   }
 
@@ -79,12 +83,12 @@
 
   @media (min-width: $tablet-width) {
     &--information-cat {
-      margin-bottom: 40px;
+      margin-bottom: 43px;
     }
 
     &--program {
-      max-width: 708px;
-      margin: 0 auto 71px;
+      max-width: 630px;
+      margin: 0 auto 42px;
       padding-top: 25px;
       padding-bottom: 10px;
       border: 1px solid $light-grey-2;
@@ -115,11 +119,19 @@
   margin-bottom: 6px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 26px;
+    margin-bottom: 19px;
+
+    &:nth-child(even) {
+      padding-left: 44px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 0;
+
+    &:nth-child(even) {
+      padding-left: 0;
+    }
   }
 }
 
@@ -136,7 +148,7 @@
 
 .form__label {
   position: relative;
-  margin-right: 13px;
+  margin-right: 18px;
   white-space: nowrap;
   font-size: 16px;
   line-height: 18px;
@@ -147,9 +159,9 @@
     color: $black-3;
 
     @media (min-width: $tablet-width) {
-      padding-left: 69px;
-      padding-top: 10px;
-      padding-bottom: 10px;
+      padding-left: 59px;
+      padding-top: 4px;
+      padding-bottom: 6px;
     }
 
     &::before {
@@ -164,7 +176,7 @@
       border: 1px solid $light-grey-5;
 
       @media (min-width: $tablet-width) {
-        left: 10px;
+        left: 0;
         width: 40px;
         height: 40px;
       }
@@ -183,7 +195,7 @@
 
       @media (min-width: $tablet-width) {
         top: 11px;
-        left: 21px;
+        left: 10px;
         width: 18px;
         height: 18px;
       }
@@ -203,6 +215,13 @@
       width: 30px;
       height: 30px;
       border: 1px solid $light-grey-5;
+
+      @media (min-width: $tablet-width) {
+        top: 2px;
+        left: 0;
+        width: 40px;
+        height: 40px;
+      }
     }
 
     &::after {
@@ -217,11 +236,18 @@
       border-top-style: none;
       border-right-style: none;
       transform: rotate(-45deg);
+
+      @media (min-width: $tablet-width) {
+        top: 15px;
+        left: 8px;
+        width: 21px;
+        height: 10px;
+      }
     }
 
     @media (min-width: $tablet-width) {
-      padding-left: 64px;
-      padding-top: 13px;
+      padding-left: 57px;
+      padding-top: 10px;
       padding-bottom: 13px;
     }
   }
@@ -242,7 +268,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-bottom: 31px;
+    padding-bottom: 35px;
   }
 }
 
@@ -255,7 +281,11 @@
     margin-bottom: 20px;
 
     &--additional {
-      width: 340px;
+      width: 300px;
+    }
+
+    &--program {
+      margin-bottom: 13px;
     }
   }
 
@@ -283,7 +313,7 @@
 .form__input-field {
   width: 100%;
   height: 45px;
-  padding: 0 15px;
+  padding: 0 18px;
   font-size: 16px;
   line-height: 18px;
   font-family: $font-extra;
@@ -312,7 +342,7 @@
   height: 13px;
 
   @media (min-width: $tablet-width) {
-    right: 21px;
+    right: 17px;
     top: 19px;
   }
 }
@@ -325,8 +355,8 @@
   height: 20px;
 
   @media (min-width: $tablet-width) {
-    right: 18px;
-    top: 17px;
+    right: 15px;
+    top: 16px;
   }
 }
 
@@ -393,6 +423,7 @@
   @media (min-width: $tablet-width) {
     padding-left: 39px;
     padding-right: 42px;
+    margin-left: -42px;
     font-size: 36px;
     line-height: 36px;
   }
@@ -421,7 +452,7 @@
 }
 
 .form__text {
-  margin-top: 21px;
+  margin-top: 16px;
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
@@ -461,9 +492,9 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    padding: 13px 0;
+    padding: 16px 0;
     margin-right: 61px;
-    width: 40%;
+    width: 45%;
     font-size: 20px;
     line-height: 20px;
   }
