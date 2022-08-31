@@ -1,5 +1,5 @@
 .form__container {
-  max-width: 320px;
+  max-width: $mobile-width;
   padding: 0 20px;
   margin: 0 auto;
 
@@ -9,8 +9,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    // width: $desktop-width;
-    // padding: 0 40px;
     padding: 0;
   }
 
@@ -18,7 +16,7 @@
     @media (min-width: $desktop-width) {
       width: 1440px;
       margin: 0 auto;
-      padding: 0 40px;
+      padding: 0 110px;
     }
   }
 
@@ -31,6 +29,7 @@
   margin-bottom: 75px;
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 52px;
     display: flex;
     justify-content: space-between;
   }
@@ -104,7 +103,7 @@
 
     &--program {
       margin: 0;
-      padding: 24px 0 12px 25px;
+      padding: 27px 0 11px 2px;
       width: 47%;
       height: 100%;
     }
@@ -313,7 +312,7 @@
 .form__input-field {
   width: 100%;
   height: 45px;
-  padding: 0 18px;
+  padding: 0 19px;
   font-size: 16px;
   line-height: 18px;
   font-family: $font-extra;
@@ -401,6 +400,10 @@
       max-width: 596px;
     }
 
+    @media (min-width: $desktop-width) {
+      margin-bottom: 78px;
+    }
+
   }
 
   &--commentary {
@@ -464,6 +467,10 @@
     font-size: 16px;
     line-height: 16px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 19px;
+  }
 }
 
 .form__wrapper-additional {
@@ -500,9 +507,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 81px;
-    padding-left: 6px;
-    padding-right: 0;
+    margin-right: 78px;
+    padding-left: 0;
+    padding-right: 5px;
     width: 47%;
   }
 }

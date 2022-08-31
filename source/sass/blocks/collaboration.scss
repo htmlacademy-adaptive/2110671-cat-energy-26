@@ -17,15 +17,34 @@
     margin-bottom: 39px;
     padding-top: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 42px;
+    position: relative;
+    min-height: 400px;
+    padding-top: 96px;
+  }
 }
 
 .collaboration__contacts {
+  position: relative;
+  z-index: 1;
   display: flex;
   padding: 26px 0;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
     padding-top: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-around;
+    padding-bottom: 21px;
+    padding-top: 44px;
+    padding-left: 61px;
+    padding-right: 25px;
+    width: 565px;
+    background-color: $white;
   }
 }
 
@@ -43,6 +62,13 @@
     line-height: 25px;
     width: 30%;
   }
+
+  @media (min-width: $desktop-width) {
+    width: unset;
+    max-width: 45%;
+    padding-left: 20px;
+    margin-right: 17px;
+  }
 }
 
 .collaboration__address {
@@ -54,6 +80,13 @@
     line-height: 20px;
     text-align: right;
     width: 25%;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    width: unset;
+    margin-left: 37px;
+    max-width: 210px;
   }
 }
 
@@ -93,10 +126,24 @@
       width: 113px;
       height: 105px;
     }
+
+    @media (min-width: $desktop-width) {
+      top: 130px;
+      left: calc(65% - 16px);
+      width: 113px;
+      height: 106px;
+    }
   }
 
   @media (min-width: $tablet-width) {
     height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
   }
 }
 
