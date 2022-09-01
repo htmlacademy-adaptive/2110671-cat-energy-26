@@ -30,9 +30,10 @@
   position: relative;
   z-index: 1;
   display: flex;
-  padding: 26px 0;
+  padding: 11px 0;
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 26px;
     justify-content: space-between;
     padding-top: 15px;
   }
@@ -112,7 +113,7 @@
     content: "";
     position: absolute;
     top: 137px;
-    left: calc(50% - 32px);
+    left: calc(50% - 26px);
     right: 0;
     width: 57px;
     height: 53px;

@@ -17,7 +17,7 @@
 }
 
 .main-container__title {
-  margin-top: 61px;
+  margin-top: 25px;
   margin-bottom: 37px;
   font-size: 36px;
   line-height: 36px;
@@ -26,6 +26,7 @@
   color: $black-1;
 
   @media (min-width: $tablet-width) {
+    margin-top: 61px;
     font-size: 60px;
     line-height: 60px;
   }
