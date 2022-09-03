@@ -1,13 +1,26 @@
 .present {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 66px 50px 25px;
+  padding: 171px 50px 25px;
   min-height: 289px;
   background-color: $green;
   background-image: url("../img/gift-photo-mobile.jpg");
   background-repeat: no-repeat;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 58px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 78px;
+    height: 80px;
+    background-image: url(../img/icon-gift.svg);
+  }
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
