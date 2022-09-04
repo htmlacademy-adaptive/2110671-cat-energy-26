@@ -1,10 +1,18 @@
 .extra-catalog {
   margin-bottom: 39px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 24px;
+  }
 }
 
 .extra-catalog__header-line {
   position: relative;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+  }
 
   &::after {
     content: "";
@@ -14,6 +22,13 @@
     right: 0;
     height: 2px;
     background-color: $green;
+
+    @media (min-width: $tablet-width) {
+      top: 23px;
+      left: 0;
+      right: 0;
+      width: 100%;
+    }
   }
 }
 
@@ -31,8 +46,15 @@
   color: $black-1;
 
   @media (min-width: $tablet-width) {
+    padding-left: 38px;
+    padding-right: 30px;
+    max-width: 411px;
     font-size: 36px;
     line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: - 38px;
   }
 }
 
