@@ -20,8 +20,8 @@
           </button>
         </div>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link" href="#">Главная</a>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--active" href="#">Главная</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="catalog.html">Каталог продукции</a>
@@ -78,7 +78,7 @@
               <p class="description__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
             </li>
             <li class="description__item description__item--scales">
-              <p class="description__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+              <p class="description__text">Уже&nbsp;через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!</p>
             </li>
           </ol>
         </div>
@@ -103,7 +103,7 @@
                 </li>
               </ul>
               <p class="result__cost">
-                <span class="result__cost-text">Затраты на питание: 15 000 руб.</span>
+                <span class="result__cost-text">Затраты на питание:</span>15 000 руб.
               </p>
             </div>
           </div>
@@ -118,8 +118,13 @@
               </div>
             </div>
             <div class="result__controls">
-              <div class="result__toggle">
-              </div>
+              <div class="result__bar"></div>
+              <button class="result__toggle">
+                <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 0L0 9L8 18V0Z" fill="#666666"/>
+                  <path d="M24 9L16 0V18L24 9Z" fill="#666666"/>
+                </svg>
+              </button>
             </div>
           </div>
         </div>
@@ -184,6 +189,8 @@
       </div>
 
     </footer>
+
+    <script src="js/menu.js"></script>
 
   </body>
 </html>

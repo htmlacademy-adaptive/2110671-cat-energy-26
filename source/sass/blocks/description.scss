@@ -4,6 +4,12 @@
   line-height: 18px;
   font-family: $font-main;
   color: $dark-grey;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 15px;
+    margin-bottom: 21px;
+    border-bottom: 1px solid #ededed;
+  }
 }
 
 .description__title {
@@ -15,6 +21,7 @@
   color: $black-1;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 47px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -23,6 +30,10 @@
 .description__text {
   margin: 0;
   margin-top: 2px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 14px;
+  }
 }
 
 .description__list {
@@ -45,8 +56,10 @@
   padding-left: 80px;
   min-height: 70px;
 
-  &:not(:last-child) {
-    margin-bottom: 10px;
+  @media (max-width: $mobile-width) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
   }
 
   &::before {
@@ -59,16 +72,43 @@
     background-color: $green;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
   }
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 37px;
-    width: 45%;
+    margin: 25px 0 0;
+    padding: 100px 62px 0 0;
+    width: 46%;
     min-height: 290px;
+
+    &::after {
+      position: absolute;
+      top: -40px;
+      left: 117px;
+      z-index: -1;
+
+      counter-increment: myCounter;
+      content: counter(myCounter);
+      color: $light-grey;
+      display: inline-block;
+      font-family: $font-extra;
+      font-size: 281px;
+      line-height: 281px;
+      text-align: right;
+    }
+
+    &:nth-child(n+10) {
+      &::after {
+        left: 87px;
+        letter-spacing: -35px;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {

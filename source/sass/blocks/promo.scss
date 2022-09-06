@@ -25,10 +25,29 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
     min-height: 830px;
     color: $black-1;
-    background-color: $white;
+    // background-color: $white;
     background-image: none;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 252px;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      display: block;
+      height: 709px;
+      background-image: url("../img/index-can-tablet.jpg");
+      background-position: top center;
+      background-repeat: no-repeat;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -36,6 +55,12 @@
     color: $black-1;
     background-color: $white;
     background-image: none;
+  }
+}
+
+.promo__image {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 
@@ -49,6 +74,9 @@
 
   @media (min-width: $tablet-width) {
     max-width: 80%;
+    padding-top: 51px;
+    margin-left: 86px;
+    margin-bottom: 41px;
     font-size: 60px;
     line-height: 60px;
     text-align: left;
@@ -67,6 +95,8 @@
 
   @media (min-width: $tablet-width) {
     max-width: 80%;
+    margin-left: 87px;
+    margin-bottom: 48px;
     font-size: 20px;
     line-height: 20px;
     text-align: left;
@@ -82,7 +112,8 @@
   line-height: 18px;
 
   @media (min-width: $tablet-width) {
-    padding: 14px 0;
+    padding: 17px 0;
+    margin-left: 89px;
     width: 244px;
     font-size: 20px;
     line-height: 20px;
