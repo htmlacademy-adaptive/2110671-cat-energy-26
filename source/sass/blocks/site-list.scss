@@ -57,6 +57,10 @@
 
   @media (min-width: $desktop-width) {
     color: $black-2;
+
+    &--index {
+      color: $white;
+    }
   }
 
   &--active::after {
@@ -68,5 +72,9 @@
     bottom: 4px;
     width: 100%;
     background: $green;
+
+    @media (min-width: $desktop-width) {
+      background: $white;
+    }
   }
 }

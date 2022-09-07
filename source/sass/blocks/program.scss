@@ -13,6 +13,17 @@
   line-height: 37px;
   text-transform: uppercase;
 
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 163px;
+    margin: 0 0 75px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -29,12 +40,13 @@
       width: 200px;
       height: 200px;
     }
-  }
 
-  @media (min-width: $tablet-width) {
-    padding-left: 0;
-    font-size: 36px;
-    line-height: 36px;
+    @media (min-width: $desktop-width) {
+      left: 0;
+      top: -77%;
+      width: 100px;
+      height: 100px;
+    }
   }
 
   &--weight-loss {
@@ -54,6 +66,13 @@
         width: 141px;
         height: 194px;
         background-size: cover;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: -35px;
+        left: 14px;
+        width: 71px;
+        height: 97px;
       }
     }
   }
@@ -76,6 +95,13 @@
         height: 113px;
         background-size: cover;
       }
+
+      @media (min-width: $desktop-width) {
+        top: -9px;
+        left: -19px;
+        width: 138px;
+        height: 57px;
+      }
     }
   }
 }
@@ -93,7 +119,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 53px;
+    margin-bottom: 28px;
     font-size: 16px;
     line-height: 24px;
   }

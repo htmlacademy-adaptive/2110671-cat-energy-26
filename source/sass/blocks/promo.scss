@@ -51,10 +51,13 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 52px;
     min-height: 500px;
     color: $black-1;
-    background-color: $white;
-    background-image: none;
+
+    &::after {
+      display: none;
+    }
   }
 }
 
@@ -83,7 +86,27 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 42%;
+    position: relative;
+    z-index: 2;
+    max-width: 47%;
+    margin-bottom: 38px;
+    margin-left: 80px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -33px;
+      left: 371px;
+      right: 0;
+      z-index: 1;
+      display: block;
+      height: 498px;
+      width: 552px;
+      background-image: url("../img/index-can-desktop.png");
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: 552px auto;
+    }
   }
 }
 
@@ -104,6 +127,8 @@
 
   @media (min-width: $desktop-width) {
     max-width: 40%;
+    margin-left: 80px;
+    margin-bottom: 51px;
   }
 }
 
@@ -117,5 +142,10 @@
     width: 244px;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
+    margin-bottom: 54px;
   }
 }
