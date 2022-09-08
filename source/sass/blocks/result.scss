@@ -62,13 +62,13 @@
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 51px;
+    margin-bottom: 37px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 45px;
+    margin-bottom: 31px;
   }
 }
 
@@ -84,6 +84,10 @@
     margin-bottom: 65px;
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 147px;
   }
 }
 
@@ -110,10 +114,10 @@
   justify-content: space-between;
   list-style: none;
   padding: 0;
-  margin: 0 0 24px;
+  margin: 0 0 34px;
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 30px;
+    margin-bottom: 33px;
   }
 }
 
@@ -177,7 +181,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-color: $light-grey-3;
+    background-color: $light-grey;
   }
 }
 
@@ -194,6 +198,7 @@
 
   @media (min-width: $tablet-width) {
     width: 175px;
+    margin-bottom: 34px;
     font-size: 20px;
     line-height: 20px;
     text-align: right;

@@ -97,7 +97,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    border: 1px solid $light-grey-5;
+    border-left: 1px solid $light-grey-5;
+    border-right: 1px solid $light-grey-5;
     padding: 26px 38px 25px;
   }
 
@@ -107,8 +108,6 @@
     padding: 14px 0 17px;
     border-left: none;
     border-right: none;
-    border-top: 1px solid #cdcdcd;
-    border-bottom: 1px solid #cdcdcd;
   }
 }
 
