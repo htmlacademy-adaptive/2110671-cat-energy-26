@@ -3,5 +3,13 @@
   font-family: $font-extra;
   color: $black-1;
   text-transform: uppercase;
-  margin-bottom: 58px;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 84px;
+  }
 }

@@ -20,14 +20,14 @@
           </button>
         </div>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link" href="#">Главная</a>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--active site-list__link--index" href="#">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+            <a class="site-list__link site-list__link--index" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Подбор программы</a>
+            <a class="site-list__link site-list__link--index" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -78,7 +78,7 @@
               <p class="description__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
             </li>
             <li class="description__item description__item--scales">
-              <p class="description__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+              <p class="description__text">Уже&nbsp;через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!</p>
             </li>
           </ol>
         </div>
@@ -103,7 +103,7 @@
                 </li>
               </ul>
               <p class="result__cost">
-                <span class="result__cost-text">Затраты на питание: 15 000 руб.</span>
+                <span class="result__cost-text">Затраты на питание:</span>15 000 руб.
               </p>
             </div>
           </div>
@@ -118,8 +118,13 @@
               </div>
             </div>
             <div class="result__controls">
-              <div class="result__toggle">
-              </div>
+              <div class="result__bar"></div>
+              <button class="result__toggle">
+                <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 0L0 9L8 18V0Z" fill="#666666"/>
+                  <path d="M24 9L16 0V18L24 9Z" fill="#666666"/>
+                </svg>
+              </button>
             </div>
           </div>
         </div>
@@ -132,15 +137,16 @@
       <section class="collaboration main-footer__collaboration">
         <div class="container">
           <div class="collaboration__contacts">
-            <h2 class="collaboration__title">Приглашаем к сотрудничеству дилеров!</h2>
+            <h2 class="collaboration__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
             <div class="collaboration__address">
-              <p class="collaboration__street">ул. Большая Конюшенная, д. 19/8</p>
+              <p class="collaboration__street">ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8</p>
               <p class="collaboration__city">Санкт-Петербург</p>
             </div>
           </div>
         </div>
 
         <div class="collaboration__map">
+          <iframe class="colloboration__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036287938596!2d30.318562739455565!3d59.938719111088055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1661007728250!5m2!1sru!2sru" width="320" height="362" allowfullscreen="" aria-hidden="false" tabindex="0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Офис компании по адресу улица Большая Конюшенная, 19/8, Санкт-Петербург"></iframe>
         </div>
       </section>
 
@@ -183,6 +189,8 @@
       </div>
 
     </footer>
+
+    <script src="js/menu.js"></script>
 
   </body>
 </html>

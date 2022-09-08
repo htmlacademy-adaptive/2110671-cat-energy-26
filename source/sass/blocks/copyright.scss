@@ -2,10 +2,17 @@
   line-height: 18px;
   color: $dark-grey;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 25px;
+  }
 }
 
 .copyright__link {
+  display: block;
+
   @media (min-width: $tablet-width) {
     margin-left: 22px;
+    margin-bottom: 14px;
   }
 }

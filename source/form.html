@@ -13,7 +13,7 @@
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <a class="main-nav__logo" href="index.html">
-            <img src="img/logo.svg" width="191" height="38" alt="Логотип Cat Energy.">
+            <img src="img/logo.svg" width="174" height="52" alt="Логотип Cat Energy.">
           </a>
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -26,8 +26,8 @@
           <li class="site-list__item">
             <a class="site-list__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link" href="#">Подбор программы</a>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--active" href="#">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -36,7 +36,7 @@
 
     <main class="main-container">
       <div class="container">
-        <h1 class="main-container__title">Подбор программы</h1>
+        <h1 class="main-container__title main-container__title--form">Подбор программы</h1>
         <p class="main-container__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       </div>
 
@@ -64,17 +64,17 @@
               </fieldset>
 
               <fieldset class="form__fieldset form__fieldset--program">
-                <div class="form__container">
+                <div class="form__container form__container--program">
                   <legend class="visually-hidden">Тип программы</legend>
-                  <div class="form__row">
+                  <div class="form__row form__row--program">
                     <input class="form__input-radio" type="radio" name="goal" value="weight-loss" id="weight-loss" checked>
                     <label class="form__label form__label--radio" for="weight-loss">Похудение</label>
                   </div>
-                  <div class="form__row">
+                  <div class="form__row form__row--program">
                     <input class="form__input-radio" type="radio" name="goal" value="mass-gain" id="mass-gain">
                     <label class="form__label form__label--radio" for="mass-gain">Набор массы</label>
                   </div>
-                  <div class="form__row">
+                  <div class="form__row form__row--program">
                     <input class="form__input-radio" type="radio" name="goal" value="advice" id="advice">
                     <label class="form__label form__label--radio" for="advice">Не знаю (Нужен ваш совет)</label>
                   </div>
@@ -158,22 +158,23 @@
 
     <footer class="main-footer">
 
-      <section class="collaboration">
+      <section class="collaboration collaboration--form">
         <div class="container">
           <div class="collaboration__contacts">
-            <h2 class="collaboration__title">Приглашаем к сотрудничеству дилеров!</h2>
+            <h2 class="collaboration__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
             <div class="collaboration__address">
-              <p class="collaboration__street">ул. Большая Конюшенная, д. 19/8</p>
+              <p class="collaboration__street">ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8</p>
               <p class="collaboration__city">Санкт-Петербург</p>
             </div>
           </div>
         </div>
 
         <div class="collaboration__map">
+          <iframe class="colloboration__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036287938596!2d30.318562739455565!3d59.938719111088055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1661007728250!5m2!1sru!2sru" width="320" height="362" allowfullscreen="" aria-hidden="false" tabindex="0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Офис компании по адресу улица Большая Конюшенная, 19/8, Санкт-Петербург"></iframe>
         </div>
       </section>
 
-      <div class="main-footer__wrapper container">
+      <div class="main-footer__wrapper">
         <div class="main-footer__logo">
           <a class="main-footer__link" href="index.html">
             <img src="img/footer-logo.svg" width="128" height="24" alt="Логотип Cat Energy.">
@@ -212,5 +213,8 @@
       </div>
 
     </footer>
+
+    <script src="js/menu.js"></script>
+
   </body>
 </html>

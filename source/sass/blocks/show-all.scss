@@ -1,6 +1,19 @@
 .show-all {
   position: relative;
+  padding-top: 78px;
   background-color: $white;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 27px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 31px;
+    height: 31px;
+    background-image: url("../img/plus-icon-mobile.svg");
+  }
 
   @media (min-width: $tablet-width) {
     border: 2px solid $light-grey;
