@@ -18,6 +18,13 @@
   @media (min-width: $tablet-width) {
     border: 2px solid $light-grey;
     padding-top: 108px;
+
+    &::after {
+      top: 55px;
+      width: 61px;
+      height: 61px;
+      background-image: url("../img/plus-icon.svg");
+    }
   }
 }
 
