@@ -17,7 +17,19 @@
 
   @media (min-width: $tablet-width) {
     border: 2px solid $light-grey;
-    padding-top: 108px;
+    padding-top: 142px;
+
+    &::after {
+      top: 51px;
+      width: 61px;
+      height: 61px;
+      background-image: url("../img/plus-icon.svg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 36px;
+    padding-right: 36px;
   }
 }
 
@@ -31,7 +43,8 @@
   color: $black-2;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 30px;
+    margin-top: 18px;
+    margin-bottom: 21px;
     max-width: 178px;
     font-size: 20px;
     line-height: 22px;

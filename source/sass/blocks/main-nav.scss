@@ -23,6 +23,14 @@
 
 .main-nav__logo img {
   padding-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 203px;
+  }
 }
 
 .main-nav__wrapper {

@@ -1,7 +1,13 @@
 .extra-catalog {
-  margin-bottom: 39px;
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -76px;
+    margin-bottom: 75px;
+  }
 
   @media (min-width: $desktop-width) {
+    margin-top: -68px;
     margin-bottom: 24px;
   }
 }
@@ -83,7 +89,8 @@
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 60px;
-    width: 73%;
+    width: 100%;
+    max-width: 895px;
   }
 }
 
@@ -99,7 +106,7 @@
   @media (min-width: $tablet-width) {
     border-left: 1px solid $light-grey-5;
     border-right: 1px solid $light-grey-5;
-    padding: 26px 38px 25px;
+    padding: 26px 38px 27px;
   }
 
   @media (min-width: $desktop-width) {
@@ -128,7 +135,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 31px;
+    margin-right: 28px;
     align-items: center;
     width: 100%;
   }
