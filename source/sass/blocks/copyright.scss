@@ -6,6 +6,10 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 25px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 18px;
+  }
 }
 
 .copyright__link {
