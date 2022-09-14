@@ -1,5 +1,10 @@
 .main-footer {
+  padding-bottom: 20px;
   background-color: $light-grey;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 30px;
+  }
 }
 
 .main-footer__collaboration {

@@ -50,6 +50,17 @@
   color: $black-1;
   padding-bottom: 6px;
 
+  &--active::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    left: 0;
+    right: 0;
+    bottom: 4px;
+    width: 100%;
+    background: $green;
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 17px;
     padding-bottom: 11px;
@@ -60,21 +71,12 @@
 
     &--index {
       color: $white;
-    }
-  }
 
-  &--active::after {
-    content: "";
-    position: absolute;
-    height: 2px;
-    left: 0;
-    right: 0;
-    bottom: 4px;
-    width: 100%;
-    background: $green;
-
-    @media (min-width: $desktop-width) {
-      background: $white;
+      &::after {
+        @media (min-width: $desktop-width) {
+          background: $white;
+        }
+      }
     }
   }
 }

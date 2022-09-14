@@ -47,6 +47,10 @@
     @media (min-width: $tablet-width) {
       margin-bottom: 50px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 52px;
+    }
   }
 
   &--additional {
@@ -313,6 +317,12 @@
   }
 }
 
+.form__row--email {
+  @media (min-width: $desktop-width) {
+    padding-right: 7px;
+  }
+}
+
 .form__row--email,
 .form__row--phone {
   position: relative;
@@ -358,27 +368,33 @@
 
 .form__input-icon-email {
   position: absolute;
-  right: 16px;
-  top: 15px;
-  width: 18px;
-  height: 13px;
+  right: 17px;
+  top: 17px;
 
   @media (min-width: $tablet-width) {
     right: 22px;
+    top: 19px;
+  }
+
+  @media (min-width: $tablet-width) {
+    right: 26px;
     top: 19px;
   }
 }
 
 .form__input-icon-phone {
   position: absolute;
-  right: 12px;
-  top: 12px;
-  width: 20px;
-  height: 20px;
+  right: 16px;
+  top: 14px;
 
   @media (min-width: $tablet-width) {
     right: 21px;
     top: 16px;
+  }
+
+  @media (min-width: $tablet-width) {
+    right: 19px;
+    top: 15px;
   }
 }
 
@@ -406,7 +422,7 @@
 .form__legend {
   position: relative;
   z-index: 1;
-  padding-right: 20px;
+  padding-right: 15px;
   margin: 0;
   font-size: 24px;
   line-height: 26px;
@@ -415,7 +431,7 @@
   background-color: $white;
 
   &--information-owner {
-    max-width: 210px;
+    max-width: 200px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 76px;
@@ -428,7 +444,7 @@
   }
 
   &--commentary {
-    max-width: 150px;
+    max-width: 142px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 76px;
@@ -437,7 +453,7 @@
   }
 
   &--additional {
-    max-width: 170px;
+    max-width: 162px;
 
     @media (min-width: $tablet-width) {
       max-width: 290px;
