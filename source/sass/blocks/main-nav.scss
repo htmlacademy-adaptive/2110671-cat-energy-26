@@ -108,6 +108,7 @@
 .main-nav--nojs .main-nav__list {
   @media (max-width: $mobile-only) {
     display: block;
+    position: static;
   }
 }
 

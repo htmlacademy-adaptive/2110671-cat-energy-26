@@ -12,13 +12,6 @@
     padding: 0;
   }
 
-  &--desktop-only {
-    @media (min-width: $desktop-width) {
-      width: $desktop-width;
-      margin: 0 auto;
-      padding: 0 110px;
-    }
-  }
 }
 
 .form__wrapper-information-cat {
@@ -32,6 +25,11 @@
     margin-bottom: 51px;
     display: flex;
     justify-content: space-between;
+
+    &--desktop-only {
+      width: $desktop-width;
+      padding: 0 110px;
+    }
   }
 }
 
