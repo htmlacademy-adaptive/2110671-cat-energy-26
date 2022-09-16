@@ -317,22 +317,11 @@
   z-index: 2;
 }
 
-.result__bar {
-  position: absolute;
-  left: 50%;
-  top: 0;
-  bottom: 0;
-  width: 4px;
-  background-color: $dark-grey-2;
-  border-radius: 2px;
-  border: 0;
-  transform: translateX(-50%);
-}
-
 .result__toggle {
   position: absolute;
   left: 50%;
   top: 50%;
+  z-index: 1;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -340,4 +329,44 @@
   background-color: $white;
   transform: translate(-50%, -50%);
   cursor: pointer;
+  color: $dark-grey-2;
+
+  &:hover {
+    border-color: $green;
+    color: $green;
+  }
+
+  &:active {
+    border-color: $green-2;
+    color: $green-2;
+    opacity: 0.6;
+  }
+}
+
+.result__bar {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+  width: 4px;
+  background-color: $dark-grey-2;
+  border-radius: 2px;
+  border: 0;
+  transform: translateX(-50%);
+}
+
+.result__toggle-icon {
+  path {
+    fill: currentColor;
+  }
+}
+
+.result__toggle:hover + .result__bar {
+  background-color: $green;
+}
+
+.result__toggle:active + .result__bar {
+  background-color: $green-2;
+  opacity: 0.6;
 }

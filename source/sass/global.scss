@@ -15,6 +15,7 @@ body {
   margin: 0 auto;
   font-family: $font-main;
   color: $dark-grey;
+  overflow-x: hidden;
 }
 
 .visually-hidden {
