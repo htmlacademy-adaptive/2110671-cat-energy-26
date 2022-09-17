@@ -14,14 +14,14 @@
 }
 
 .form__wrapper-information-cat {
-  margin-bottom: 25px;
+  margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 75px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 51px;
+    margin-bottom: 47px;
     display: flex;
     justify-content: space-between;
 
@@ -81,6 +81,10 @@
         background-color: $light-grey-6;
       }
     }
+
+    &--additional {
+      margin-bottom: 12px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -94,7 +98,6 @@
       max-width: 630px;
       padding-top: 25px;
       padding-bottom: 10px;
-      padding-left: 40px;
       margin: 0 auto;
       margin-bottom: 42px;
       border: 1px solid $light-grey-2;
@@ -110,7 +113,7 @@
 
     &--program {
       margin: 0;
-      padding: 27px 0 11px 2px;
+      padding: 19px 0 20px 2px;
       width: 47%;
       height: 100%;
     }
@@ -122,7 +125,7 @@
 }
 
 .form__fieldset--additional .form__row {
-  margin-bottom: 6px;
+  margin-bottom: 12px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 19px;
@@ -154,7 +157,6 @@
 }
 
 .form__input-checkbox {
-
   &:hover + .form__label--checkbox::before {
     border-color: $light-grey-8;
   }
@@ -181,7 +183,6 @@
 }
 
 .form__input-radio {
-
   &:hover + .form__label--radio::before {
     border-color: $light-grey-8;
   }
@@ -210,17 +211,18 @@
 .form__label {
   position: relative;
   margin-right: 12px;
-  white-space: nowrap;
   font-size: 16px;
   line-height: 18px;
   color: $dark-grey;
+  max-width: 250px;
 
   &--radio {
     padding: 7px 15px 7px 45px;
     color: $black-3;
+    max-width: 400px;
 
     @media (min-width: $tablet-width) {
-      padding-left: 19px;
+      padding-left: 59px;
       padding-top: 4px;
       padding-bottom: 6px;
     }
@@ -233,7 +235,8 @@
       position: absolute;
       content: "";
       left: 0;
-      top: 0;
+      top: 50%;
+      transform: translateY(-50%);
       z-index: 1;
       width: 30px;
       height: 30px;
@@ -241,7 +244,7 @@
       border: 1px solid $light-grey-5;
 
       @media (min-width: $tablet-width) {
-        left: -41px;
+        left: 0;
         width: 40px;
         height: 40px;
       }
@@ -256,15 +259,15 @@
       content: "";
       display: none;
       left: 8px;
-      top: 8px;
+      top: 50%;
+      transform: translateY(-50%);
       width: 13px;
       height: 13px;
       border-radius: 50%;
       background-color: $green;
 
       @media (min-width: $tablet-width) {
-        top: 11px;
-        left: -30px;
+        left: 10px;
         width: 18px;
         height: 18px;
       }
@@ -276,21 +279,21 @@
   }
 
   &--checkbox {
-    padding: 9px 15px 9px 48px;
+    padding: 6px 15px 6px 45px;
     color: $black-1;
 
     &::before {
       position: absolute;
       content: "";
       left: 0;
-      top: 1px;
+      top: 50%;
+      transform: translateY(-50%);
       z-index: 1;
       width: 30px;
       height: 30px;
       border: 1px solid $light-grey-5;
 
       @media (min-width: $tablet-width) {
-        top: 2px;
         left: 0;
         width: 40px;
         height: 40px;
@@ -302,16 +305,21 @@
       content: "";
       display: none;
       left: 3px;
-      top: 7px;
+      top: 50%;
+      transform: translateY(-50%) rotate(-45deg);
       width: 21px;
       height: 10px;
       border: 2px solid $green;
       border-top-style: none;
       border-right-style: none;
-      transform: rotate(-45deg);
+
+
+      @media (max-width: $mobile-only) {
+        top: 42%;
+        left: 6px;
+      }
 
       @media (min-width: $tablet-width) {
-        top: 15px;
         left: 8px;
         width: 21px;
         height: 10px;
@@ -329,6 +337,11 @@
     margin-right: 18px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 11px;
+    padding-bottom: 11px;
   }
 }
 
@@ -366,6 +379,10 @@
   @media (min-width: $desktop-width) {
     &--additional {
       width: 245px;
+    }
+
+    &--program {
+      margin-bottom: 0;
     }
   }
 }
@@ -446,44 +463,39 @@
   }
 }
 
-
-
 .form__input-field--email,
 .form__input-field--phone {
   padding-right: 45px;
   border: 1px solid $light-grey-5;
 }
 
-
 .form__input-icon-email {
   position: absolute;
   right: 17px;
-  top: 17px;
+  top: 50%;
+  transform: translateY(-50%);
 
   @media (min-width: $tablet-width) {
     right: 22px;
-    top: 19px;
   }
 
   @media (min-width: $tablet-width) {
     right: 26px;
-    top: 19px;
   }
 }
 
 .form__input-icon-phone {
   position: absolute;
   right: 16px;
-  top: 14px;
+  top: 50%;
+  transform: translateY(-50%);
 
   @media (min-width: $tablet-width) {
     right: 21px;
-    top: 16px;
   }
 
   @media (min-width: $tablet-width) {
     right: 19px;
-    top: 15px;
   }
 }
 
@@ -616,14 +628,16 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 20px;
+    padding-top: 16px;
+    padding-bottom: 4px;
     padding-right: 20px;
   }
 
   @media (min-width: $desktop-width) {
     justify-content: space-between;
     padding-right: 0;
-    padding-bottom: 7px;
+    padding-top: 17px;
+    padding-bottom: 10px;
   }
 }
 
@@ -638,7 +652,7 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    padding: 16px 0;
+    padding: 16px 16px;
     margin-right: 61px;
     margin-left: 41px;
     width: 40%;

@@ -33,6 +33,10 @@
     padding-bottom: 21px;
     margin-bottom: 144px;
     width: 245px;
+
+    &:not(:nth-child(4n)) {
+      margin-right: 79px;
+    }
   }
 }
 
