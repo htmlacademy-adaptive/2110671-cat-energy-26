@@ -53,6 +53,7 @@ const html = () => {
 const script = () => {
   return gulp.src('source/js/*.js')
     .pipe(terser())
+    .pipe(rename('menu.min.js'))
     .pipe(gulp.dest('build/js'))
 }
 
