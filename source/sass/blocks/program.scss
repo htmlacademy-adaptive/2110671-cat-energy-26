@@ -36,14 +36,14 @@
 
     @media (min-width: $tablet-width) {
       left: 114%;
-      top: 43%;
+      top: 14px;
       width: 200px;
       height: 200px;
     }
 
     @media (min-width: $desktop-width) {
       left: 0;
-      top: -77%;
+      top: -30px;
       width: 100px;
       height: 100px;
     }
@@ -61,7 +61,7 @@
       background-repeat: no-repeat;
 
       @media (min-width: $tablet-width) {
-        top: 10%;
+        top: 4px;
         left: 123%;
         width: 141px;
         height: 194px;
@@ -89,7 +89,7 @@
       background-repeat: no-repeat;
 
       @media (min-width: $tablet-width) {
-        top: 164%;
+        top: 57px;
         left: 104%;
         width: 268px;
         height: 113px;
@@ -156,5 +156,15 @@
     padding-right: 71px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  &:hover::after {
+    width: 32px;
+    height: 10px;
+    background-image: url("../img/right-arrow-icon-verylong.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

@@ -50,6 +50,14 @@
   color: $black-1;
   padding-bottom: 6px;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &--active::after {
     content: "";
     position: absolute;
@@ -59,6 +67,12 @@
     bottom: 4px;
     width: 100%;
     background: $green;
+  }
+
+  &--active:hover,
+  &--active:active {
+    opacity: 1;
+    cursor: auto;
   }
 
   @media (min-width: $tablet-width) {

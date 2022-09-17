@@ -8,10 +8,10 @@
   background-color: $green;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/gift-photo-mobile@2x.jpg");
-    background-size: 280px auto;
   }
 
   &::after {
@@ -50,7 +50,6 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/gift-photo-tablet@2x.jpg");
-      background-size: 708px auto;
     }
   }
 
@@ -65,7 +64,6 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/gift-photo-desktop@2x.jpg");
-      background-size: 245px auto;
     }
   }
 }

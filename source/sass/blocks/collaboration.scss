@@ -50,6 +50,7 @@
 }
 
 .collaboration__title {
+  padding-right: 15px;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -74,6 +75,7 @@
 }
 
 .collaboration__address {
+  padding-right: 4px;
   font-size: 14px;
   line-height: 20px;
 
@@ -113,6 +115,7 @@
   background-image: url("../img/bg-map-mobile@1x.png");
   background-position: 50%;
   background-repeat: no-repeat;
+  z-index: 0;
 
   &::before {
     content: "";
@@ -120,6 +123,7 @@
     top: 137px;
     left: calc(50% - 26px);
     right: 0;
+    z-index: -1;
     width: 57px;
     height: 53px;
     background-image: url("../img/map-pin.png");
